@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  server:
+    privileged: true
+    build:
+      context: .
+    ports:
+      - 20:20
+      - 3000:3000
+      - "30000-30010:30000-30010"
